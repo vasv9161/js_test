@@ -40,3 +40,18 @@ function playMeow() {
         console.log('Ошибка!', error);
     }
 }
+
+//проверка на четность
+function checkEven() {
+    const inputElement = document.getElementById('numInput');
+    const inputValue = inputElement.value;
+    
+    if (inputValue === '') {alert('Введите число..'); return;}
+    
+    const num = Number(inputValue);
+    if (isNaN(num)) {alert('Ошибка! Введите корректное число!'); return;}
+    
+    //проверяем четность
+    if (num % 2 === 0) {console.log('Число', num, '- ЧЕТНОЕ');} 
+    else {console.log('Число', num, '- НЕЧЕТНОЕ');}
+}
