@@ -83,7 +83,7 @@ h1 {
     background-color: #f0f0f0;
     border-radius: 20px;
     display: inline-block;
-    border: 1px dashed #999;
+    pointer-events: none; 
 }
 
 .hint:hover {
