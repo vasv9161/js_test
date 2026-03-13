@@ -55,3 +55,35 @@ function checkEven() {
     if (num % 2 === 0) {console.log('Число', num, '- ЧЕТНОЕ');} 
     else {console.log('Число', num, '- НЕЧЕТНОЕ');}
 }
+
+//создание и вывод списка чисел от 1 до 5
+function createNumberList() {
+    // Создаем пустой массив
+    const numbers = [];
+    
+    // Цикл for от 1 до 5
+    for (let i = 1; i <= 5; i++) {
+        numbers.push(i); // добавляем число в массив
+    }
+    
+    // Находим элемент ul на странице
+    const listElement = document.getElementById('numberList');
+    
+    // Очищаем список перед добавлением новых элементов
+    listElement.innerHTML = '';
+    
+    // Создаем элементы li для каждого числа
+    for (let i = 0; i < numbers.length; i++) {
+        const li = document.createElement('li'); // создаем li
+        li.textContent = numbers[i]; // вставляем число
+        listElement.appendChild(li); // добавляем li в ul
+    }
+    
+    // Выводим массив в консоль для проверки
+    console.log('Создан массив чисел:', numbers);
+}
+
+// Вызываем функцию сразу после загрузки страницы
+window.onload = function() {
+    createNumberList();
+};
