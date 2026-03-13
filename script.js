@@ -33,11 +33,11 @@ function playMeow() {
     try {
         const meowSound = new Audio('sounds/meow.mp3');
         meowSound.play().catch(error => {
-            console.log('no meow((:', error);
+            console.error('no meow((:', error);
             alert('Не удалось воспроизвести звук. Проверьте наличие файла meow.mp3');
         }); console.log('😺 meow');
     } catch (error) {
-        console.log('Ошибка!', error);
+        console.error('Ошибка!', error);
     }
 }
 
