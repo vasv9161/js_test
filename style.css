@@ -73,6 +73,24 @@ h1 {
     background-color: #e0e0e0;
 }
 
+.hint {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    display: inline-block;
+    border: 1px dashed #999;
+}
+
+.hint:hover {
+    background-color: #e8e8e8;
+    color: #333;
+}
+
 .image-container {
     margin-top: 30px;
     padding: 10px;
