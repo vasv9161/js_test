@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScriptTest</title>
+    <!-- CSS файл -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Знакомство с JavaScript</h1>
+        
+        <!-- удвоение числа -->
+        <input type="num" 
+               id="numInput" 
+               class="input-field" 
+               placeholder="Введите число...">
+        
+        <button class="button" onclick="doubleNumber()">Удвоить число</button>
+        <hr>
+
+        <!-- приветствие -->
+        <button class="button" onclick="greet()">Ввести имя</button>
+
+        <!-- картинка -->
+        <div class="image-container">
+            <img src="images/image1.jpg" 
+                 alt="Приветствие" 
+                 class="greeting-image"
+                 onclick="playMeow()">     <!-- ))) -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
