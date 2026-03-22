@@ -10,6 +10,7 @@ body {
     align-items: center;
 }
 
+/*фоновое видео*/
 #background-video {
     position: fixed;
     right: 0;
@@ -22,6 +23,7 @@ body {
     object-fit: cover;
 }
 
+/*все содержимое*/
 .container {
     width: 100%;
     max-width: 500px;
@@ -35,6 +37,7 @@ h1 {
     color: black;
 }
 
+/*поле ввода*/
 .input-field {
     width: 100%;
     max-width: 400px;
@@ -52,15 +55,18 @@ h1 {
     transition: all 0.3s ease;
 }
 
+/*эффект при наведении на поле ввода*/
 .input-field:hover {
     border-color: #999;
 }
 
+/*эффект при фокусе на поле ввода*/
 .input-field:focus {
     border-color: #666;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
+/*кнопки*/
 .button {
     background-color: transparent;
     color: black;
@@ -75,16 +81,19 @@ h1 {
     min-width: 150px;
 }
 
+/*эффект при наведении на кнопку*/
 .button:hover {
     background-color: #f0f0f0;
     transform: scale(1.05);
 }
 
+/*эффект при нажатии на кнопку*/
 .button:active {
     transform: scale(0.95);
     background-color: #e0e0e0;
 }
 
+/*подсказка*/
 .hint {
     font-family: Arial, sans-serif;
     font-size: 14px;
@@ -98,16 +107,19 @@ h1 {
     pointer-events: none; 
 }
 
+/*эффект при наведении на подсказку*/
 .hint:hover {
     background-color: #e8e8e8;
     color: #333;
 }
 
+/*контейнер для картинки*/
 .image-container {
     margin-top: 30px;
     padding: 10px;
 }
 
+/*картинка*/
 .greeting-image {
     max-width: 100%;
     height: auto;
@@ -116,33 +128,12 @@ h1 {
     transition: transform 0.3s ease;
 }
 
+/*эффект при наведении на картинку*/
 .greeting-image:hover {
     transform: scale(1.02);
 }
 
-.info-box {
-    background-color: #f8f8f8;
-    border-radius: 15px;
-    padding: 20px;
-    margin-top: 30px;
-    text-align: left;
-    font-family: Arial, sans-serif;
-    color: black;
-    border: 1px solid #e0e0e0;
-}
-
-.info-box h3 {
-    margin-top: 0;
-    color: black;
-    font-size: 1.2em;
-}
-
-.info-box p {
-    margin: 10px 0;
-    color: black;
-    line-height: 1.5;
-}
-
+/*линия разделения*/
 hr {
     border: none;
     border-top: 2px solid black;
@@ -150,11 +141,13 @@ hr {
     width: 100%;
 }
 
+/*плейсхолдер в поле ввода*/
 ::placeholder {
     color: #999;
     font-family: Arial, sans-serif;
 }
 
+/*список чисел*/
 .numbers-list {
     margin-top: 30px;
     padding: 20px;
@@ -164,6 +157,7 @@ hr {
     text-align: left;
 }
 
+/*заголовок списка*/
 .numbers-list h3 {
     margin-top: 0;
     margin-bottom: 15px;
@@ -172,6 +166,7 @@ hr {
     text-align: center;
 }
 
+/*стили для контейнера ul списка чисел*/
 .numbers-list ul {
     list-style-type: none;
     padding: 0;
@@ -182,10 +177,11 @@ hr {
     flex-wrap: wrap;
 }
 
+/*стили для каждого элемента li списка чисел*/
 .numbers-list li {
     background-color: white;
     color: black;
-    padding: 12px 20px;
+    padding: 20px 20px;
     border-radius: 50%;
     border: 2px solid black;
     font-weight: bold;
@@ -196,6 +192,7 @@ hr {
     transition: all 0.3s ease;
 }
 
+/*эффект при наведении на элемент списка чисел*/
 .numbers-list li:hover {
     transform: scale(1.1);
     background-color: #f0f0f0;
